@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR code component</title>
+    <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-
+</head>
 <body>
     <div class="container">
-        <div class="card">
-            <img src="image-qr-code.png" alt="">
-                <div class="text">
-                    <h2>Improve your front-end skills by building projects</h2>
-                    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-                    </p>
-                </div>
+        <h1>Random <span>Password Generator</span></h1>
+        <div class="display">
+            <input type="text" id="password-txt" placeholder="Password">
+            <img src="copy.png" onclick="copyPass()">
         </div>
+        <button class="btn" onclick="createPassword()">Generate Password</button>
+        
     </div>
 
 
 
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Tejas Khile</a>.
-      </div>
+    <script src="script.js"></script>
 </body>
 </html>
